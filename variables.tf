@@ -18,12 +18,12 @@ variable "sql_server_name" {
   type        = string
 }
 
-variable "sql_admin_user" {
+variable "sql_admin" {
   description = "sqladmin"
   type        = string
 }
 
-variable "sql_admin_pass" {
+variable "sql_password" {
   description = "abcd@1234"
   type        = string
   sensitive   = true
