@@ -3,7 +3,7 @@ variable "subscription_id" {
   type        = string
 }
 
-variable "rg_name" {
+variable "resource_group_name" {
   description = "FPP-RG"
   type        = string
 }
