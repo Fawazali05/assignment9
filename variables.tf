@@ -9,7 +9,7 @@ variable "rg_name" {
 }
 
 variable "location" {
-  description = "east-us"
+  description = "eastus"
   type        = string
 }
 
