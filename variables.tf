@@ -14,7 +14,7 @@ variable "location" {
 }
 
 variable "sql_server_name" {
-  description = "fppsqlserver420"
+  description = "fppsqlserver420-central"
   type        = string
 }
 
