@@ -48,3 +48,14 @@ variable "sql_db_name" {
   description = "Name of the SQL database"
   type        = string
 }
+variable "vm_admin" {
+  description = "Admin username for the Linux virtual machine"
+  type        = string
+}
+
+variable "vm_password" {
+  description = "Admin password for the Linux virtual machine"
+  type        = string
+  sensitive   = true
+}
+
