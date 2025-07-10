@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "FPP-RG"
+  name     = "FawazPranayPranav-RG"
   location = "West US 3"
 }
