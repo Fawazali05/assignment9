@@ -30,6 +30,10 @@ jobs:
       # - name: Terraform Import Resource Group
       #   run: terraform import azurerm_resource_group.rg /subscriptions/80d37f3a-a7f6-405b-a0d0-e2d362572306/resourceGroups/FPP-RG
 
+      - name: Terraform import
+        run:  terraform import azurerm_virtual_network.example "/subscriptions/80d37f3a-a7f6-405b-a0d0-e2d362572306/resourceGroups/FPP-RG/providers/Microsoft.Network/virtualNetworks/fawazVM-vnet"
+              terraform import azurerm_subnet.default "/subscriptions/80d37f3a-a7f6-405b-a0d0-e2d362572306/resourceGroups/FPP-RG/providers/Microsoft.Network/virtualNetworks/fawazVM-vnet/subnets/default"
+      
       - name: Terraform Plan
         run: terraform plan -refresh=false -input=false -var-file="terraform.tfvars"
 
