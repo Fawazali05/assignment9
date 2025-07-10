@@ -34,18 +34,17 @@ variable "db_name" {
   type        = string
 }
 
-
 variable "vm_count" {
-  description = "1"
+  description = "Number of virtual machines to create"
   type        = number
 }
 
 variable "subnet_id" {
-  description = "/subscriptions/80d37f3a-a7f6-405b-a0d0-e2d362572306/resourceGroups/FPP-RG/providers/Microsoft.Network/virtualNetworks/fawazVM-vnet/subnets/default"
+  description = "ID of the subnet to attach the NICs"
   type        = string
 }
 
 variable "sql_db_name" {
-  description = "fawazpranaypranavsqldb427"
+  description = "Name of the SQL database"
   type        = string
 }
